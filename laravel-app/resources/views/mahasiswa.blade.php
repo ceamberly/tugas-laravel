@@ -41,7 +41,6 @@
 @endsection
 
 @section('content')
-
     <div class="container">
         <h1>DAFTAR MAHASISWA</h1>
 
@@ -53,13 +52,12 @@
             </tr>
 
             @foreach ($mahasiswa as $mhs)
-            <tr>
-                <td>{{ $mhs['nama'] }}</td>
-                <td>{{ $mhs['alamat'] }}</td>
-                <td>{{ $mhs['gender'] }}</td>
-            </tr>
+                <tr>
+                    <td>{{ $mhs['nama'] }}</td>
+                    <td>{{ $mhs['alamat'] }}</td>
+                    <td>{{ $mhs['gender'] }}</td>
+                </tr>
             @endforeach
         </table>
     </div>
-
 @endsection
