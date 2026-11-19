@@ -1,0 +1,3 @@
+@yield('styles')
+</style>
+</head>
