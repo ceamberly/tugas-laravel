@@ -1,88 +1,78 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Luas Segitiga</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #eaf2ff;
-            margin: 0;
-            padding: 40px 20px;
-        }
+@extends('layouts.app')
 
-        .container {
-            max-width: 450px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
+@section('title', 'Kalkulator Luas Segitiga')
 
-        h1 {
-            text-align: center;
-            color: #1e40af;
-        }
+@section('styles')
+    .container {
+        max-width: 450px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
 
-        label {
-            display: block;
-            margin-top: 18px;
-            font-weight: bold;
-        }
+    h1 {
+        text-align: center;
+        color: #1e40af;
+    }
 
-        input {
-            width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
+    label {
+        display: block;
+        margin-top: 18px;
+        font-weight: bold;
+    }
 
-        button {
-            width: 100%;
-            padding: 13px;
-            margin-top: 25px;
-            background: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
 
-        button:hover {
-            background: #1d4ed8;
-        }
+    button {
+        width: 100%;
+        padding: 13px;
+        margin-top: 25px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
 
-        .hasil {
-            margin-top: 25px;
-            padding: 15px;
-            background: #dcfce7;
-            border-radius: 8px;
-            color: #166534;
-            text-align: center;
-        }
+    button:hover {
+        background: #1d4ed8;
+    }
 
-        .error {
-            color: red;
-            font-size: 14px;
-        }
+    .hasil {
+        margin-top: 25px;
+        padding: 15px;
+        background: #dcfce7;
+        border-radius: 8px;
+        color: #166534;
+        text-align: center;
+    }
 
-        .kembali {
-            display: block;
-            text-align: center;
-            margin-top: 20px;
-            color: #2563eb;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
+    .error {
+        color: red;
+        font-size: 14px;
+    }
 
+    .kembali {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #2563eb;
+        text-decoration: none;
+    }
+@endsection
+
+@section('content')
     <div class="container">
         <h1>Kalkulator Luas Segitiga</h1>
 
@@ -120,6 +110,4 @@
             Kembali ke Daftar Mahasiswa
         </a>
     </div>
-
-</body>
-</html>
+@endsection
